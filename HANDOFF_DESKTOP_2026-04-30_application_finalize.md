@@ -19,11 +19,48 @@ CLI session 2026-04-29 night executed 8 tracks under `feedback_resume_tool_choic
 Run these two lines locally to confirm CLI's GitHub state:
 
 ```bash
-gh repo list 0SxD --visibility private --limit 100 | wc -l   # expect: 36+ private repos
+gh repo list 0SxD --visibility private --limit 100 | wc -l   # expect: 47+ private repos
 gh repo view 0SxD/trinity-dialectic --json visibility           # expect: "PRIVATE"
 gh repo view 0SxD/143-protocol --json visibility               # expect: "PRIVATE"
 gh repo view 0SxD/agent-creator-handoff-v2 --json visibility   # expect: "PRIVATE"
+gh repo view 0SxD/sandbox-staging-index --json visibility      # expect: "PRIVATE" -- master pointer index
 ```
+
+## Master pointer repo (start here)
+
+**`https://github.com/0SxD/sandbox-staging-index`** -- 30 area folders with NOTES.md (good/bad annotations) plus 7 reference docs (this handoff, night session summary, workstream inventory, publishable artifact inventory, open-source candidates, NOTES_FOR_SAGE, KNOWN_CORRECTIONS).
+
+Each NOTES.md points to a SandBoxSetup local path. No PII content was uploaded to staging-index -- only path references and orchestrator commentary.
+
+## Repos created tonight + this AM (14 total)
+
+NEW tonight (3):
+- `0SxD/trinity-dialectic`
+- `0SxD/143-protocol`
+- `0SxD/agent-creator-handoff-v2`
+
+NEW this AM (11):
+- `0SxD/sandbox-staging-index` -- the master pointer
+- `0SxD/sandbox-docs-plans` -- master plan + install guide + superpowers
+- `0SxD/sandbox-agents` -- AGENTS.md + PII screener + Protocol Blueprint PNG
+- `0SxD/github-research-staging` -- separate research staging tree
+- `0SxD/sandbox-audits` -- workpuls audit history
+- `0SxD/cloud-infrastructure` -- google_cloud_agent staging
+- `0SxD/prompt-engineer-candidate-anthropic` -- JD + Symbolic_Symbolic memo + TODO
+- `0SxD/personal-profile-builder-pack` -- canon corrections + master research handoff
+- `0SxD/memory-export` -- 11-file auto-memory snapshot
+- `0SxD/agentic-auto-buildx-ai` -- April 2025 bundle work + CE_Agent_Build_Bundle
+- `0SxD/sandbox-handoff-files` -- chronological handoff history
+
+Plus UPDATED 2 existing (received my NOTES.md commit because dirs already had remotes):
+- `0SxD/system-protocol-directives` (HumanXai dir was already pushing here)
+- `0SxD/agent-plugin-skills-v01` (sagex_plugin_v0.1_example_copy was already pushing here)
+
+Plus 2 EMPTY new repos (created but nothing pushed because dirs had existing remotes; Sage can delete or repurpose):
+- `0SxD/humanxai-system-protocol-staging`
+- `0SxD/sagex-plugin-v01-toplevel-copy`
+
+All 0SxD private repos: ~47 total (36 existing + 11 new).
 
 ## Three deliverables Desktop produces TODAY
 
@@ -146,6 +183,37 @@ CLI noticed (but did not touch) these dispatch files appearing 23:28-23:38 Easte
 - `DEEPSEEK_audit_obsidian_rag_prompt_2026-04-29.md`
 
 GDrive uploads at 23:31-23:39 with curator-pattern files (AGENTS.md, CHANGELOG.md, registry.yaml, CONTRIBUTING.md, etc.) suggest Sage's parallel session was uploading the ce-rd-os bundle to Drive.
+
+## Google Drive sweep findings (CRITICAL FOR APPLICATION)
+
+GDrive sweep (limited to title-search + recent-files; full content scan would require more API calls). Drive content largely mirrors GitHub but includes some artifacts not in local SandBoxSetup:
+
+**HIGH-VALUE for Desktop application work:**
+- `Austin_Green_Resume_032026.pdf` (87 KB, March 3 2026) -- the prior resume PDF Sage was using
+- `LinkedIn_Profile_Austin_Bennett_Green.pdf` (74 KB, April 20 2026) -- LinkedIn profile snapshot
+- `Linked_in_screen_shot_evidence_contract_tutoring_austin_gree.png` (115 KB) -- LinkedIn screenshot evidence
+- `Anthropic_JD_Prompt_Engineer_Agent_Prompts_Evals_5107121008_2026-04-24.pdf` -- the actual JD PDF
+- `Anthropic_App_Notes_Prompt_drafts_2026_04_23.md` -- application notes
+- `austin_resume_corpus_index.md` (9.7 KB) -- resume material corpus index
+- `resume_variant_writer.md` (4 KB)
+
+**HIGH-PII (do not publish):**
+- `Passport_Copy_Austin_Green.pdf` (726 KB)
+
+**Folder mirrors of 0SxD repos (Sage's parallel session pushing repos to Drive backup):**
+- `agent-creator-agent`, `agent-creator-handoff-v1`, `prompt-engineer-agent-bundle-v1`, `prompt-agent-bundle-v2`, `handoff-instructions-prompt-agent`, `agent-workstreams`, `anthropic-app-os-v1`, `anthropic_app_OS_v1`
+
+**Other notable Drive content:**
+- `agent-systems-and-ai-architecture/` folder
+- `Research_HumanX/cupid-swarm-agent-prompt.md` (16.6 KB) -- HumanX swarm agent prompt
+- `CE_Agent_Build_Bundle/` folder (mirrors local)
+- `Agent_skills_task_writer_v1/` folder -- Mercor task writer (PRIVATE)
+- `OpenBrain_NT_3.28.2026_architecture.zip` (45 MB)
+
+**JD ID DISCREPANCY -- DESKTOP RESOLVE:**
+- Resume v3 / v4 header says: `Anthropic Greenhouse 5159669008`
+- Drive PDF filename says: `5107121008`
+- Different role IDs. May be different posts (PE Claude Code vs PE Agent Prompts Evals) or repostings. Confirm which is current target.
 
 ## Workstreams Desktop should NOT touch
 
