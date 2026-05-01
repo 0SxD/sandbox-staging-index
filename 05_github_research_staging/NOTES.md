@@ -12,7 +12,7 @@
 
 ## Bad / risk
 - Content not yet inventoried at file level; some may overlap with `_github_export_staging/`
-- raw/ may contain PII or Mercor terms; verify before public
+- raw/ may contain PII or evaluation platform terms; verify before public
 
 ## Desktop action
 LIST contents, decide overlap with already-pushed `_github_export_staging` bundles. Likely ABSORB into the existing 0SxD/sandbox-staging-index entries OR push as own private repo.

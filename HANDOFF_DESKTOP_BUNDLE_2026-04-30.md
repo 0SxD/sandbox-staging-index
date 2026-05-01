@@ -88,7 +88,7 @@ gh repo edit 0SxD/<repo> --visibility public --accept-visibility-change-conseque
 
 ### Step 3: Desktop ingests + analyzes
 Desktop fetches the public URL, scans for:
-- Codename leaks (143_protocol / 0sXai / PEL_GATE / pathos_ethos_logos / Austin B. Green / Mercor terms)
+- Codename leaks (143_protocol / 0sXai / PEL_GATE / pathos_ethos_logos / Sage / evaluation platform terms)
 - License compliance (LICENSE file present? compatible with dependencies?)
 - README quality (30-second test: outsider knows what / why / how within 30 seconds?)
 - Security (no API keys, no .env, no secrets, no PII)
@@ -116,7 +116,7 @@ Sage asked: "do we just make it public for 1-30 minutes and have it absord and p
 Three options Desktop chooses from:
 
 ### Option A: Soft-publish for ingestion (Sage's idea)
-Flip repo public for 5-30 min. Desktop fetches via WebFetch. Sage flips back private. Risk: Google indexes the public window; revoking access does not unindex. MEDIUM RISK -- recommend SHORT windows (5 min max) and ONLY after confirming no PII / Mercor terms / real-name in repo.
+Flip repo public for 5-30 min. Desktop fetches via WebFetch. Sage flips back private. Risk: Google indexes the public window; revoking access does not unindex. MEDIUM RISK -- recommend SHORT windows (5 min max) and ONLY after confirming no PII / evaluation platform terms / real-name in repo.
 
 ### Option B: Local file system
 Desktop's Project mode can read local files. Sage uploads (or points Desktop at) the local SandBoxSetup directory. Desktop reads file contents directly without GitHub. NO PUBLIC EXPOSURE. SAFEST. Limitation: Desktop's local-file access depends on Sage's setup; verify before relying.

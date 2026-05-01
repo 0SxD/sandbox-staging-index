@@ -119,7 +119,7 @@ Format:
 
 [2026-04-30T01:30-04 | M3 NOT pushed (intentional)] These dirs were NOT pushed:
   - _local_only/ -- per dir name
-  - raw/ -- gitignored, contains corpus/PII/Mercor terms
+  - raw/ -- gitignored, contains corpus/PII/evaluation platform terms
   - OpenBrainLM_sandbox/ -- 0SxD/archive-openbrain (April 19) covers older snapshot; current may be ahead but did not push to avoid massive duplicate
   - workstreams/ -- 0SxD/agent-workstreams already exists; verify currency
   - Visual_Prompts_Infographics_Revisions/ -- 0SxD/visual-prompts-infographics already exists; verify currency

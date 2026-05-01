@@ -83,7 +83,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
 | agentic_auto_buildX_ai/sagex_plugin_v0.1_example_copy/skills/audit-loop/SKILL.md | Plugin audit loop skill (Sage-authored) | Plugin-specific audit, self-check, quality gate | medium | clear |
 | agentic_auto_buildX_ai/sagex_plugin_v0.1_example_copy/skills/research-gate/SKILL.md | Plugin research gate skill (Sage-authored) | Plugin research advancement, eval-gated progression | medium | clear |
 | Review_Report_Pass_Fail_Audit_Agent/skills/ | Audit agent skills directory [VERIFY_NEEDED] | Audit automation, pass/fail logic, red teaming | medium | ambiguous |
-| raw/other/skills/merc_task_writer_v1/SKILL.md | Mercor task writer skill (PRIVATE_PROOF) | Mercor-style task generation, eval criteria, rubric tagging | high | clear |
+| raw/other/skills/merc_task_writer_v1/SKILL.md | evaluation platform task writer skill (PRIVATE_PROOF) | evaluation platform-style task generation, eval criteria, rubric tagging | high | clear |
 | OpenBrainLM_sandbox/sandbox/OpenBrain_Upgrades/Gemini_AntiGravity/reference_components/plugins/superpowers/skills/brainstorming/SKILL.md | Curated brainstorming superpower (REFERENCE_VENDORED) | Reference pattern, superpower design, ideation skill | none | clear |
 | OpenBrainLM_sandbox/sandbox/OpenBrain_Upgrades/Gemini_AntiGravity/reference_components/plugins/superpowers/skills/dispatching-parallel-agents/SKILL.md | Curated parallel dispatch superpower (REFERENCE_VENDORED) | Multi-agent orchestration, parallelism, load balancing | none | clear |
 | OpenBrainLM_sandbox/sandbox/OpenBrain_Upgrades/Gemini_AntiGravity/reference_components/plugins/superpowers/skills/executing-plans/SKILL.md | Curated plan execution superpower (REFERENCE_VENDORED) | Plan interpretation, step execution, state tracking | none | clear |
@@ -94,7 +94,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
 ===CATEGORY_5_ATOMIC_PROMPT_TASKS===
 | relative_path | abstract | qualification_demonstrated | publish_risk | confidence |
 | --- | --- | --- | --- | --- |
-| raw/other/skills/merc_task_writer_v1/SKILL.md | Mercor task writer with boolean eval criteria (PRIVATE_PROOF) | Atomic task design, eval-driven prompt engineering, rubric tagging | high | clear |
+| raw/other/skills/merc_task_writer_v1/SKILL.md | evaluation platform task writer with boolean eval criteria (PRIVATE_PROOF) | Atomic task design, eval-driven prompt engineering, rubric tagging | high | clear |
 | NoteBookLM_research_agent_conv/skills/notebooklm-research-lane/evals/ | NotebookLM research evals directory [VERIFY_NEEDED] | Eval dataset creation, pass/fail criteria, ground truth prompts | low | ambiguous |
 | memory/project_spd_grounding_v03_rubric.md | G-Eval grounding rubric reference (Liu 2023) | Eval methodology, rubric calibration, research grounding | low | likely |
 | wiki/handoffs/dispatches/DEEPSEEK_audit_prompt_2026-04-29.md | Zero-context audit prompt template | Zero-shot prompt design, audit task specification, adversarial eval | medium | clear |
@@ -136,7 +136,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
 5. Publication-grade: Every qualification claim is strongly justified by path/name evidence, no leaps
 
 **Risk assessment (1-5):**
-1. Critical fail: High-risk items marked low or unmarked; personal/mercor content missed
+1. Critical fail: High-risk items marked low or unmarked; personal/evaluation platform content missed
 2. Poor: Several medium/high risk items miscalibrated
 3. Adequate: Most risks correctly identified, few borderline calls
 4. Good: All clear risks correctly assessed, borderline items flagged
@@ -162,7 +162,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
 - Check `wiki/handoffs/audit/` and `_audits/` for any non-private files that could be listed explicitly; if all private, note that in the table
 - Review `wiki/anthropic_application/` and `Visual_Prompts_Infographics_Revisions/` for eval task examples to fill in CATEGORY_5 specifics
 - Audit for duplicate detection: `sagex_plugin_v0.1_example_copy/` appears in three locations; confirm these are true copies and not independent variants
-- Verify if `raw/other/skills/merc_task_writer_v1/SKILL.md` contains any Mercor-internal terms beyond those in filename; if additional terms found, keep publish_risk HIGH
+- Verify if `raw/other/skills/merc_task_writer_v1/SKILL.md` contains any evaluation platform-internal terms beyond those in filename; if additional terms found, keep publish_risk HIGH
 - Check `.obsidian/plugins/` content to confirm vendor status; if any custom plugins exist, reclassify as Sage-authored
 ---
 
@@ -179,7 +179,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
 | SWARM_ORC_prompter_format_agent_bundle_handoff_instructions_spec/ | Agent bundle handoff spec with system directive and formatting templates for SWARM ORC bundles. | Bundle specification and handoff protocol; shows how to package agents for transfer. | low | probable |
 | personal_profile_builder_handoff_pack/ | Handoff pack for a personal profile builder agent; likely contains all components for standalone use. | Transferable agent pack design: skills, prompts, and config bundled for a specific task. | low | clear |
 | OpenBrainLM_sandbox/sagex/ | SageX agentic stack inside the main sandbox; includes agents/hooks/skills subdirs. | Full agent ecosystem bundled as a cohesive unit – hooks, skills, and agents integrated. | MEDIUM (SageX codename) | clear |
-| Review_Report_Pass_Fail_Audit_Agent/ | Audit agent bundle (pass/fail reviewer); may contain Mercor-style criterion tags. | Production agent bundle for review/audit tasks; exemplifies integration of rubric logic and feedback hooks. | low* (verify if Mercor terms inside) | clear |
+| Review_Report_Pass_Fail_Audit_Agent/ | Audit agent bundle (pass/fail reviewer); may contain evaluation platform-style criterion tags. | Production agent bundle for review/audit tasks; exemplifies integration of rubric logic and feedback hooks. | low* (verify if evaluation platform terms inside) | clear |
 | Github_Curator_Bundle_v0.1.0_Audit_2026-04-28.md | Audit report on Github Curator bundle performance; part of the bundle's documentation ecosystem. | Demonstrates bundle evaluation and iteration loop – audit as a bundle artifact. | low | clear |
 | Github_Curator_Bundle_v0.1.0_BlindBeta_Audit_2026-04-28.md | Blind beta audit of the same curator bundle. | Additional audit evidence for the bundle's reliability; shows blind evaluation pattern. | low | clear |
 | wiki/handoffs/audit/staging/github_curator/ | Staging directory for the Github Curator bundle on private GitHub. | Bundle staging practice; shows pre-release workflow for agent bundles. | low | clear |
@@ -312,7 +312,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
    - 4: Strong mapping; each claim logically derived from structural hints.  
    - 5: Every qualification is precisely justified; confidence correctly reflects evidence strength.
 
-4. **Risk assessment** – Are `publish_risk` calls calibrated (PII, private codenames, Mercor terms, API keys)?  
+4. **Risk assessment** – Are `publish_risk` calls calibrated (PII, private codenames, evaluation platform terms, API keys)?  
    - 1: Obvious HIGH risk items missed; personal or secret data negligently exposed.  
    - 2: Several mis-calibrations; inconsistent application of risk rules.  
    - 3: Mostly correct; minor misjudgments on medium/low boundaries.  
@@ -333,7 +333,7 @@ Each category has a table: relative_path | abstract | qualification_demonstrated
 
 ===NOTES_FOR_SAGE===
 - **Verify needed**:  
-  - `Review_Report_Pass_Fail_Audit_Agent/` – confirm whether internal Mercor criterion tags (e.g., factual_error, hallucination_check) are present; if so, raise publish_risk to HIGH.  
+  - `Review_Report_Pass_Fail_Audit_Agent/` – confirm whether internal evaluation platform criterion tags (e.g., factual_error, hallucination_check) are present; if so, raise publish_risk to HIGH.  
   - `CE_RD_OS_research_findings_v1.md` – file name contains “research”; if we strictly exclude self-labeled research, this should be omitted from CATEGORY_8. You decide.  
   - `raw/books/research-papers-arxiv/` – are any files Sage-authored summaries or just downloaded papers? If original, they would be research; otherwise they’re a corpus.  
   - `wiki/handoffs/` – several handoff files may contain dispatch patterns; a quick local scan could identify additional CATEGORY_12 entries.  
@@ -371,7 +371,7 @@ Minimax-m2.7 zero-context checker ran the merged eval rubric. Verdict: NEEDS_REV
 - Coverage: 3 (omitted 8 wiki/concepts/ files due to ~25 row limit per category)
 - Categorization: 4 (cross-doer consistency strong; minor placeholder issues)
 - Qualification mapping: 4 (path evidence correctly used; CE_RD_OS_research_findings_v1.md should be excluded per self-label rule)
-- Risk assessment: 2 (CRITICAL: Review_Report_Pass_Fail_Audit_Agent rated "low" by deepseek without resolving Mercor terminology verification flag; should be MEDIUM-HIGH until verified)
+- Risk assessment: 2 (CRITICAL: Review_Report_Pass_Fail_Audit_Agent rated "low" by deepseek without resolving evaluation platform terminology verification flag; should be MEDIUM-HIGH until verified)
 - Confidence calibration: 3 ("ambiguous" misapplied to audit directories with inherent privacy sensitivity; "probable" fits better)
 
 **Missing dimension:** Deduplication and reference handling. Inventory has multiple copies of sagex_plugin_v0.1_example_copy/, archive copies of orchestrator.py, and bundle copies. Future rubric should distinguish canonical vs copy.
@@ -394,7 +394,7 @@ Minimax-m2.7 zero-context checker ran the merged eval rubric. Verdict: NEEDS_REV
 |---|---|
 | KIMI CATEGORY_2: `OpenBrainLM_sandbox/openbrainlm/layers/ethos.py` and `logos.py` | DOES NOT EXIST. Layers dir has only pathos.py + neuroscience-named layers (active_sensing, basal_ganglia, chromatophore, ganglion, relevance, stigmergy). Trinity Logos/Ethos/Pathos lives in `_github_export_staging/trinity_dialectic/trinity.py` (already pushed to 0SxD/trinity-dialectic). Strike both rows. |
 | KIMI CATEGORY_4: `Review_Report_Pass_Fail_Audit_Agent/skills/` | Directory is EMPTY. Sage-authored docs present at PROTOCOL.md, spec.md, system_directive.md, bootstrap.md, REPORT_wikiLLM_karpathy_setup.md, skills.md (skills.md is a doc not a dir). Update qualification + risk to reflect docs only. |
-| DEEPSEEK CATEGORY_7: `Review_Report_Pass_Fail_Audit_Agent/` "low" risk | Upgrade to MEDIUM (SageX-adjacent codename + Mercor terminology verification still pending). |
+| DEEPSEEK CATEGORY_7: `Review_Report_Pass_Fail_Audit_Agent/` "low" risk | Upgrade to MEDIUM (SageX-adjacent codename + evaluation platform terminology verification still pending). |
 
 ## Final: list of additional wiki/concepts/ files (CATEGORY_8 expansion)
 

@@ -9,7 +9,7 @@
 
 ## Bad / risk
 - Sparse content (1 file); not a strong publishable artifact
-- Workpuls data may contain Mercor-related timestamps -- private only
+- Workpuls data may contain evaluation platform-related timestamps -- private only
 
 ## Desktop action
-SKIP unless Sage wants to extract specific time-tracking analytics for Mercor employment proof.
+SKIP unless Sage wants to extract specific time-tracking analytics for evaluation platform employment proof.

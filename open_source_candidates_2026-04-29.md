@@ -48,7 +48,7 @@
 1. Flatten `prompts/` directory and assign semantic names to cryptic filenames
 2. Extract 5-10 exemplar prompts for `examples/` folder
 3. Write `PROMPT_LIBRARY_SPEC.md` documenting the versioning scheme
-4. Scrub all Mercor-specific eval criteria from prompt bodies
+4. Scrub all evaluation platform-specific eval criteria from prompt bodies
 5. Create Python wrapper for programmatic prompt loading
 6. Add attribution headers showing origin (user vs. Sage-authored)
 7. Write usage guide showing composition patterns
@@ -206,7 +206,7 @@
 4. Create `example-research-task.md` showing input/output format
 5. Add consensus mechanism explanation (voting, merging)
 6. Write deployment guide for local vs. cloud
-7. Scrub any Mercor eval tags from agent specs
+7. Scrub any evaluation platform eval tags from agent specs
 
 **Trinity rubric stub:**
 - Logos: Role registry + parallel dispatch + consensus aggregation architecture
@@ -232,7 +232,7 @@
 
 ## NOTES_FOR_SAGE
 
-- Confirm `Review_Report_Pass_Fail_Audit_Agent/` does not contain Mercor criterion tags; if clean, candidate 7 can be upgraded to "yes" and added as candidate 8
+- Confirm `Review_Report_Pass_Fail_Audit_Agent/` does not contain evaluation platform criterion tags; if clean, candidate 7 can be upgraded to "yes" and added as candidate 8
 - Verify which `wiki/concepts/` files contain FateX/HumanX references that need scrubbing for candidate 6
 - Decide priority between candidates 3 and 4 (both MCP/dispatch); recommend shipping 3 first as it's more unique
 - Confirm if `personal_profile_builder_handoff_pack/` contains any private profile data before using in candidate 5

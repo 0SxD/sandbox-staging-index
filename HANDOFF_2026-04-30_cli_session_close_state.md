@@ -76,7 +76,7 @@ To fire each (run from PowerShell after permission rule lands):
 ```powershell
 . $PROFILE
 Use-OpenRouter
-$root = "C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup"
+$root = "<staging_path>"
 
 pwsh -NoProfile -File "$root\wiki\handoffs\dispatches\or_dispatch.ps1" `
   -Model "moonshotai/kimi-k2-thinking" `

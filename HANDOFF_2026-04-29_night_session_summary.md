@@ -72,7 +72,7 @@ Total OR spend this session: **$0.2003** (vs $5.00 cap)
 | # | Repo name | Effort | Public-fit |
 |---|---|---|---|
 | 1 | claude-code-plugin-starter | S | yes |
-| 2 | prompt-fragment-library | M | yes (after Mercor scrub) |
+| 2 | prompt-fragment-library | M | yes (after evaluation platform scrub) |
 | 3 | notebooklm-mcp-integration-bridge | M | yes |
 | 4 | openrouter-dispatch-harness | S-M | yes |
 | 5 | agentic-bundle-specification | M | yes-after-rename |

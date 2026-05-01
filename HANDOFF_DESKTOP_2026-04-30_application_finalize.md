@@ -80,7 +80,7 @@ Source files (Desktop reads these directly via project file uploads OR by mounti
 2. **Strip trailing HTML comment** `<!-- DRAFTED 2026-04-29; SAGE OPEN ITEMS: ... -->` -- replace with nothing for the submitted version; keep open items in NOTES_FOR_SAGE.md.
 3. **Resolve `[GREEN_PAPER_URL pending Sage]`** -- replace with the actual URL OR remove the link line entirely if Sage decides not to expose.
 4. **Confirm $80M wording** -- v4 reads "approximately $80M"; decide if this stays or moves to a range like "$50M-$100M" for public.
-5. **Verify Virtual Educator placement** -- v4 puts it between Mercor and SAGEx; LinkedIn-chronological order would put it between SAGEx (Aug 2023 to Present) and Mercor (Oct 2025 to Present). Pick one.
+5. **Verify Virtual Educator placement** -- v4 puts it between the evaluation platform role and SAGEx; LinkedIn-chronological order would put it between SAGEx (Aug 2023 to Present) and the evaluation platform role (Oct 2025 to Present). Pick one.
 6. **Real-name posture** -- v4 header reads "Sage (Austin Bennett Green)"; this is by-design per v3 convention for ATS systems that require legal name. Confirm or change for public-flip if applicable.
 7. **OQ resolution evidence** -- consider embedding a `<!-- OQ resolutions: OQ-01=Dec 2023, OQ-02=Aug 2023, OQ-03=include Ohr Sameach, ... -->` HTML comment so Desktop verification can cross-check against `OPEN_Q_ANSWERS_PREFILLED.md`.
 
@@ -111,7 +111,7 @@ Source: `wiki/anthropic_application/OPEN_Q_ANSWERS_PREFILLED.md` plus Sage's log
 |---|---|
 | Legal name | Austin Bennett Green |
 | Public / preferred name | Sage |
-| Email | austing143@gmail.com |
+| Email | <contact> |
 | Phone | +1 (917) 653-6519 |
 | Location | New York, NY |
 | LinkedIn URL | https://www.linkedin.com/in/austin-bennett-green/ |
@@ -139,7 +139,7 @@ Source: `wiki/anthropic_application/OPEN_Q_ANSWERS_PREFILLED.md` plus Sage's log
 5. **Track 4: Resume v4 + LinkedIn doc** -- doer + 2 zero-context checkers; both verdict NEEDS_REVISION on minor cleanup items
 6. **Track 5: Workstream sweep inventory** -- snapshot at `wiki/handoffs/WORKSTREAM_INVENTORY_2026-04-29.md`
 7. **Track 6: 12-category Publishable Artifact Inventory** -- kimi lanes 1-6, deepseek lanes 7-12; ~80 items; minimax inventory checker NEEDS_REVISION on 8 wiki/concepts/ files truncated
-8. **Track 7: 7 open-source candidate repos** -- claude-code-plugin-starter (S, public-fit), prompt-fragment-library (M, after Mercor scrub), notebooklm-mcp-integration-bridge (M, public-fit), openrouter-dispatch-harness (S-M, public-fit), agentic-bundle-specification (M, after rename), concept-research-synthesizer (L, public-fit), multi-agent-swarm-orchestrator (L, after rename)
+8. **Track 7: 7 open-source candidate repos** -- claude-code-plugin-starter (S, public-fit), prompt-fragment-library (M, after evaluation platform scrub), notebooklm-mcp-integration-bridge (M, public-fit), openrouter-dispatch-harness (S-M, public-fit), agentic-bundle-specification (M, after rename), concept-research-synthesizer (L, public-fit), multi-agent-swarm-orchestrator (L, after rename)
 
 Total OR cost: $0.20 / $5.00 cap.
 
@@ -207,7 +207,7 @@ GDrive sweep (limited to title-search + recent-files; full content scan would re
 - `agent-systems-and-ai-architecture/` folder
 - `Research_HumanX/cupid-swarm-agent-prompt.md` (16.6 KB) -- HumanX swarm agent prompt
 - `CE_Agent_Build_Bundle/` folder (mirrors local)
-- `Agent_skills_task_writer_v1/` folder -- Mercor task writer (PRIVATE)
+- `Agent_skills_task_writer_v1/` folder -- evaluation platform task writer (PRIVATE)
 - `OpenBrain_NT_3.28.2026_architecture.zip` (45 MB)
 
 **JD ID DISCREPANCY -- DESKTOP RESOLVE:**

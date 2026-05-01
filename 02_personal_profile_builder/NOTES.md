@@ -20,4 +20,4 @@
 - Canon corrections may have not-yet-finalized facts
 
 ## Desktop action
-READ `canon_corrections_2026-04-23.md` and `_2026-04-26.md` while resolving v4 NEEDS_REVISION cleanup items. Cross-check FATExDAO end date, Mercor start, NYU diploma type, Ohr Sameach inclusion.
+READ `canon_corrections_2026-04-23.md` and `_2026-04-26.md` while resolving v4 NEEDS_REVISION cleanup items. Cross-check FATExDAO end date, evaluation platform start, NYU diploma type, Ohr Sameach inclusion.
